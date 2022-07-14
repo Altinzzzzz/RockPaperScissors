@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #222831;
+    color: white;
+}
+
+header{
+    background-color: rgba(8, 8, 8, 0.945);
+    color: orangered;
+    width: 100%;
+    padding: 40px 0;
+
+    font-size: 2em;
+    text-transform: uppercase;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#firstContainer{
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#secondContainer{
+    display: flex;
+    gap: 60px;
+    padding: 40px 0;
+}
+
+#secondContainer > div{
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+
+#secondContainer > div > div{
+    padding: 20px;
+    text-align: center;
+}
+
+#secondContainer > div > div > h1{
+    font-size: 145px;
+}
+
+#secondContainer > div > div > p{
+    font-size: 25px;
+}
+
+#thirdContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#thirdContainer div{
+    display: flex;
+    width: 50%;
+    padding: 50px;
+    gap: 40px;
+
+}
+
+#thirdContainer div button{
+    flex: 1;
+    font-size: 90px;
+    padding: 50px;
+    border-radius: 10%;
+    background: #393e46;
+    color: white;
+    border-style: none;
+}
+
+.thePlay:hover{
+    outline: 3px solid #FFDE00;
+}
+
+button{
+    cursor: pointer;
+}
+
+.inactive{
+    border-radius: 5px;
+    width: 35%;
+    background-color: #6599FF;
+    text-align: center;
+    height: 20%;
+
+    position: absolute;
+    left: 33%;
+    top: 40%;
+    z-index: 3;
+    display: none;
+}
+
+.inactive > *{
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+
+.inactive h1{
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.inactive button{
+    margin-bottom: 20px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: blue;
+    font-size: 30px;
+    border-style: none;
+}
+
+.inactive button:hover{
+    color: #FFDE00;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+footer h2{
+    text-align: center;
+}

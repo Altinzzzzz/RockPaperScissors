@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src = "logic.js" defer></script>
+    <title>7315 BURIIM</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link per font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src = "mainCode.js" defer></script>
 </head>
 <body>
+    <header> 
+        <h1> Rock </h1>
+        <h1> Paper </h1>
+        <h1> Scissors </h1>
+    </header>
+
+    <main>
+        <div id = "firstContainer">
+            <div>
+                <h1 style = "font-size: 3rem;" class = "result"> Choose a weapon </h1>
+                <p style = "font-size: 2rem;" class = "informativeResult"> First to score 5 points wins the game </p>
+            </div>
+        </div>
+
+        <div id = "secondContainer">
+            <div>
+                <div>
+                    <h1 class = "userQuestion"> ❔ </h1>
+                    <p> Player: <span class = "playerScore" style = "text-decoration: underline;"> 0 </span> </p>
+                </div>
+                <div>
+                    <h1 class = "computerQuestion"> ❔ </h1>
+                    <p> Computer: <span class = "computerScore" style = "text-decoration: underline;"> 0 </span> </p>
+                </div>    
+            </div>
+        </div>
+
+        <div id = "thirdContainer">
+            <div>
+                <button id = "Rock" class = "thePlay"> ✊ </button>
+                <button id = "Paper" class = "thePlay"> ✋ </button>
+                <button id = "Scissors" class = "thePlay"> ✌ </button>
+            </div>
+        </div>
+        
+        <footer>
+            <h2> Copyright @Altinzzzzz </h2>
+        </footer>
+    </main>
+    <div class = "inactive">
+        <h1></h1>
+        <button id = "inactiveButton"> Play Again? </button>
+    </div>
+    <div class = "overlay"></div> <!-- an overlay so that you cant click button after game is over-->
 </body>
 </html>
